@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7138D5702612B78100F38496 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D56F2612B78100F38496 /* HUD.swift */; };
+		7138D5752612BECC00F38496 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D5742612BECC00F38496 /* Presenter.swift */; };
+		715C8E8D26102BD600B73D37 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C8E8C26102BD600B73D37 /* ErrorViewController.swift */; };
+		715C8E9226102C3300B73D37 /* ErrorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C8E9126102C3300B73D37 /* ErrorMainView.swift */; };
 		716052E9260DEA2700FC6115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052E8260DEA2700FC6115 /* AppDelegate.swift */; };
-		716052EB260DEA2700FC6115 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052EA260DEA2700FC6115 /* SceneDelegate.swift */; };
-		716052ED260DEA2700FC6115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052EC260DEA2700FC6115 /* ViewController.swift */; };
-		716052F0260DEA2700FC6115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716052EE260DEA2700FC6115 /* Main.storyboard */; };
+		716052ED260DEA2700FC6115 /* MyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052EC260DEA2700FC6115 /* MyBaseViewController.swift */; };
 		716052F2260DEA2A00FC6115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716052F1260DEA2A00FC6115 /* Assets.xcassets */; };
 		716052F5260DEA2A00FC6115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716052F3260DEA2A00FC6115 /* LaunchScreen.storyboard */; };
 		71605300260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052FF260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift */; };
 		7160530B260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160530A260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift */; };
+		71605326260EEEE100FC6115 /* FlickrProviderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605325260EEEE100FC6115 /* FlickrProviderAPI.swift */; };
+		7160532F260EF20D00FC6115 /* FlickrData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160532E260EF20D00FC6115 /* FlickrData.swift */; };
+		71605337260EF35800FC6115 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605336260EF35800FC6115 /* Result.swift */; };
+		7160533F260EF54800FC6115 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160533E260EF54800FC6115 /* APIConstants.swift */; };
+		71605344260F0E8900FC6115 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605343260F0E8900FC6115 /* Request.swift */; };
+		71605349260F68CE00FC6115 /* BaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605348260F68CE00FC6115 /* BaseHeaderView.swift */; };
+		7160534E260F791300FC6115 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160534D260F791300FC6115 /* UIView+Extension.swift */; };
+		71605353260F79CB00FC6115 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605352260F79CA00FC6115 /* UIFont+Extension.swift */; };
+		71605358260F7E9500FC6115 /* BaseMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605357260F7E9500FC6115 /* BaseMainView.swift */; };
+		7160535D260F7EA700FC6115 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160535C260F7EA700FC6115 /* BaseViewModel.swift */; };
+		7160536C260FFF0600FC6115 /* VisualFormatPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160536B260FFF0600FC6115 /* VisualFormatPatterns.swift */; };
+		71605372260FFF5500FC6115 /* BaseFlickrPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605371260FFF5500FC6115 /* BaseFlickrPhotoCell.swift */; };
+		7160537F261000DD00FC6115 /* SizeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160537E261000DD00FC6115 /* SizeHandler.swift */; };
+		71605384261009F400FC6115 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605383261009F400FC6115 /* StringConstants.swift */; };
+		7160538E2610147800FC6115 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160538D2610147800FC6115 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7138D56F2612B78100F38496 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		7138D5742612BECC00F38496 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		715C8E8C26102BD600B73D37 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		715C8E9126102C3300B73D37 /* ErrorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMainView.swift; sourceTree = "<group>"; };
 		716052E5260DEA2700FC6115 /* iOS 1st mindera test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS 1st mindera test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		716052E8260DEA2700FC6115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		716052EA260DEA2700FC6115 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		716052EC260DEA2700FC6115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		716052EF260DEA2700FC6115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		716052EC260DEA2700FC6115 /* MyBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBaseViewController.swift; sourceTree = "<group>"; };
 		716052F1260DEA2A00FC6115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716052F4260DEA2A00FC6115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716052F6260DEA2A00FC6115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +68,21 @@
 		71605306260DEA2A00FC6115 /* iOS 1st mindera testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS 1st mindera testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7160530A260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_1st_mindera_testUITests.swift; sourceTree = "<group>"; };
 		7160530C260DEA2A00FC6115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71605325260EEEE100FC6115 /* FlickrProviderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrProviderAPI.swift; sourceTree = "<group>"; };
+		7160532E260EF20D00FC6115 /* FlickrData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrData.swift; sourceTree = "<group>"; };
+		71605336260EF35800FC6115 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7160533E260EF54800FC6115 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		71605343260F0E8900FC6115 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		71605348260F68CE00FC6115 /* BaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeaderView.swift; sourceTree = "<group>"; };
+		7160534D260F791300FC6115 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		71605352260F79CA00FC6115 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		71605357260F7E9500FC6115 /* BaseMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMainView.swift; sourceTree = "<group>"; };
+		7160535C260F7EA700FC6115 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7160536B260FFF0600FC6115 /* VisualFormatPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualFormatPatterns.swift; sourceTree = "<group>"; };
+		71605371260FFF5500FC6115 /* BaseFlickrPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFlickrPhotoCell.swift; sourceTree = "<group>"; };
+		7160537E261000DD00FC6115 /* SizeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeHandler.swift; sourceTree = "<group>"; };
+		71605383261009F400FC6115 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		7160538D2610147800FC6115 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715C8E8B26102B9A00B73D37 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				715C8E8C26102BD600B73D37 /* ErrorViewController.swift */,
+				715C8E9126102C3300B73D37 /* ErrorMainView.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		716052DC260DEA2700FC6115 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +142,11 @@
 		716052E7260DEA2700FC6115 /* iOS 1st mindera test */ = {
 			isa = PBXGroup;
 			children = (
-				716052E8260DEA2700FC6115 /* AppDelegate.swift */,
-				716052EA260DEA2700FC6115 /* SceneDelegate.swift */,
-				716052EC260DEA2700FC6115 /* ViewController.swift */,
-				716052EE260DEA2700FC6115 /* Main.storyboard */,
-				716052F1260DEA2A00FC6115 /* Assets.xcassets */,
-				716052F3260DEA2A00FC6115 /* LaunchScreen.storyboard */,
 				716052F6260DEA2A00FC6115 /* Info.plist */,
+				71605322260EEE7200FC6115 /* Infrastructure */,
+				71605320260EEE2E00FC6115 /* Presentation */,
+				7160531F260EEE1500FC6115 /* Assets */,
+				7160531E260EEDDB00FC6115 /* Support Files */,
 			);
 			path = "iOS 1st mindera test";
 			sourceTree = "<group>";
@@ -126,6 +167,104 @@
 				7160530C260DEA2A00FC6115 /* Info.plist */,
 			);
 			path = "iOS 1st mindera testUITests";
+			sourceTree = "<group>";
+		};
+		7160531E260EEDDB00FC6115 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7138D5742612BECC00F38496 /* Presenter.swift */,
+				716052E8260DEA2700FC6115 /* AppDelegate.swift */,
+				716052F3260DEA2A00FC6115 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		7160531F260EEE1500FC6115 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				716052F1260DEA2A00FC6115 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		71605320260EEE2E00FC6115 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				715C8E8B26102B9A00B73D37 /* Error */,
+				71605321260EEE4400FC6115 /* Base */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		71605321260EEE4400FC6115 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71605370260FFF3100FC6115 /* Cells */,
+				716052EC260DEA2700FC6115 /* MyBaseViewController.swift */,
+				71605348260F68CE00FC6115 /* BaseHeaderView.swift */,
+				71605357260F7E9500FC6115 /* BaseMainView.swift */,
+				7160535C260F7EA700FC6115 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		71605322260EEE7200FC6115 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				7160536A260FFEEC00FC6115 /* Utils */,
+				71605324260EEEA400FC6115 /* API */,
+				71605323260EEE7C00FC6115 /* Extentions */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		71605323260EEE7C00FC6115 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				7160534D260F791300FC6115 /* UIView+Extension.swift */,
+				71605352260F79CA00FC6115 /* UIFont+Extension.swift */,
+				7160538D2610147800FC6115 /* UIImageView+Extension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		71605324260EEEA400FC6115 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7160532D260EF1DE00FC6115 /* APIModels */,
+				71605336260EF35800FC6115 /* Result.swift */,
+				71605325260EEEE100FC6115 /* FlickrProviderAPI.swift */,
+				7160533E260EF54800FC6115 /* APIConstants.swift */,
+				71605343260F0E8900FC6115 /* Request.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7160532D260EF1DE00FC6115 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				7160532E260EF20D00FC6115 /* FlickrData.swift */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		7160536A260FFEEC00FC6115 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7160536B260FFF0600FC6115 /* VisualFormatPatterns.swift */,
+				7160537E261000DD00FC6115 /* SizeHandler.swift */,
+				71605383261009F400FC6115 /* StringConstants.swift */,
+				7138D56F2612B78100F38496 /* HUD.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		71605370260FFF3100FC6115 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				71605371260FFF5500FC6115 /* BaseFlickrPhotoCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +372,6 @@
 			files = (
 				716052F5260DEA2A00FC6115 /* LaunchScreen.storyboard in Resources */,
 				716052F2260DEA2A00FC6115 /* Assets.xcassets in Resources */,
-				716052F0260DEA2700FC6115 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +396,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716052ED260DEA2700FC6115 /* ViewController.swift in Sources */,
+				71605337260EF35800FC6115 /* Result.swift in Sources */,
+				7160537F261000DD00FC6115 /* SizeHandler.swift in Sources */,
+				71605384261009F400FC6115 /* StringConstants.swift in Sources */,
+				71605344260F0E8900FC6115 /* Request.swift in Sources */,
+				7160533F260EF54800FC6115 /* APIConstants.swift in Sources */,
+				716052ED260DEA2700FC6115 /* MyBaseViewController.swift in Sources */,
+				7160532F260EF20D00FC6115 /* FlickrData.swift in Sources */,
+				715C8E8D26102BD600B73D37 /* ErrorViewController.swift in Sources */,
 				716052E9260DEA2700FC6115 /* AppDelegate.swift in Sources */,
-				716052EB260DEA2700FC6115 /* SceneDelegate.swift in Sources */,
+				71605326260EEEE100FC6115 /* FlickrProviderAPI.swift in Sources */,
+				7138D5752612BECC00F38496 /* Presenter.swift in Sources */,
+				71605372260FFF5500FC6115 /* BaseFlickrPhotoCell.swift in Sources */,
+				7160538E2610147800FC6115 /* UIImageView+Extension.swift in Sources */,
+				715C8E9226102C3300B73D37 /* ErrorMainView.swift in Sources */,
+				7160535D260F7EA700FC6115 /* BaseViewModel.swift in Sources */,
+				71605358260F7E9500FC6115 /* BaseMainView.swift in Sources */,
+				7160534E260F791300FC6115 /* UIView+Extension.swift in Sources */,
+				7138D5702612B78100F38496 /* HUD.swift in Sources */,
+				7160536C260FFF0600FC6115 /* VisualFormatPatterns.swift in Sources */,
+				71605349260F68CE00FC6115 /* BaseHeaderView.swift in Sources */,
+				71605353260F79CB00FC6115 /* UIFont+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +452,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		716052EE260DEA2700FC6115 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				716052EF260DEA2700FC6115 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		716052F3260DEA2A00FC6115 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUPVNHUL72;
 				INFOPLIST_FILE = "iOS 1st mindera test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefan.iOS-1st-mindera-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUPVNHUL72;
 				INFOPLIST_FILE = "iOS 1st mindera test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefan.iOS-1st-mindera-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
