@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7138940C2612DF9D00454D52 /* ImageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138940B2612DF9D00454D52 /* ImageMainView.swift */; };
+		713894142612DFD000454D52 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713894132612DFD000454D52 /* ImageViewController.swift */; };
 		7138D5702612B78100F38496 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D56F2612B78100F38496 /* HUD.swift */; };
 		7138D5752612BECC00F38496 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D5742612BECC00F38496 /* Presenter.swift */; };
 		715C8E8D26102BD600B73D37 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C8E8C26102BD600B73D37 /* ErrorViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7138940B2612DF9D00454D52 /* ImageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMainView.swift; sourceTree = "<group>"; };
+		713894132612DFD000454D52 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		7138D56F2612B78100F38496 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		7138D5742612BECC00F38496 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		715C8E8C26102BD600B73D37 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7138940A2612DF8400454D52 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				713894132612DFD000454D52 /* ImageViewController.swift */,
+				7138940B2612DF9D00454D52 /* ImageMainView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		715C8E8B26102B9A00B73D37 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 		71605320260EEE2E00FC6115 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7138940A2612DF8400454D52 /* Image */,
 				715C8E8B26102B9A00B73D37 /* Error */,
 				71605321260EEE4400FC6115 /* Base */,
 			);
@@ -402,6 +416,7 @@
 				71605344260F0E8900FC6115 /* Request.swift in Sources */,
 				7160533F260EF54800FC6115 /* APIConstants.swift in Sources */,
 				716052ED260DEA2700FC6115 /* MyBaseViewController.swift in Sources */,
+				713894142612DFD000454D52 /* ImageViewController.swift in Sources */,
 				7160532F260EF20D00FC6115 /* FlickrData.swift in Sources */,
 				715C8E8D26102BD600B73D37 /* ErrorViewController.swift in Sources */,
 				716052E9260DEA2700FC6115 /* AppDelegate.swift in Sources */,
@@ -415,6 +430,7 @@
 				7160534E260F791300FC6115 /* UIView+Extension.swift in Sources */,
 				7138D5702612B78100F38496 /* HUD.swift in Sources */,
 				7160536C260FFF0600FC6115 /* VisualFormatPatterns.swift in Sources */,
+				7138940C2612DF9D00454D52 /* ImageMainView.swift in Sources */,
 				71605349260F68CE00FC6115 /* BaseHeaderView.swift in Sources */,
 				71605353260F79CB00FC6115 /* UIFont+Extension.swift in Sources */,
 			);

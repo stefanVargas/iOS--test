@@ -60,6 +60,7 @@ class BaseMainView: UIView {
         addSubview(headerView)
         addSubview(flickrCollectionView)
 
+        self.backgroundColor = .white
         setUpContraints(pattern: "V:|-[v0(72)]-[v1]|",
                         options: .alignAllCenterX,
                         views: headerView, flickrCollectionView)

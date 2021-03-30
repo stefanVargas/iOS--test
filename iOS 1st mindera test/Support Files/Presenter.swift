@@ -40,11 +40,12 @@ class Presenter {
         let controller = mainBaseController(action: .get)
         self.navigation = UINavigationController(rootViewController: controller)
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor
-            .white.withAlphaComponent(0.66)
-        self.navigation.view.backgroundColor = appearance.backgroundColor
+        appearance.backgroundColor = .white
+        appearance.shadowColor = .clear
+        self.navigation.navigationBar.isTranslucent = true
         self.navigation.navigationBar.standardAppearance = appearance
         self.navigation.navigationBar.tintColor = .darkGray
+        
     }
     
     @objc

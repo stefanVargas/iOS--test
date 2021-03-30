@@ -52,6 +52,7 @@ class ErrorMainView: UIView {
         addSubview(imageView)
         addSubview(titleLabel)
         addSubview(messageLabel)
+        self.backgroundColor = .white
         self.imageView.image = UIImage(named: StringConstants.kErrorImgName)
         
         setUpContraints(pattern: "V:|-72-[v0(256)]-28-[v1(28)]-32-[v2]",
