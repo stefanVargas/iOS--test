@@ -31,7 +31,6 @@ class APIConstants: NSObject {
         case small = "m"
         case medium = "z"
         case large = "b"
-        case largePlus = "k"
         case original = "o"
         
         var letter: String {

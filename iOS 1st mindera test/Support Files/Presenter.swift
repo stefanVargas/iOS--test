@@ -69,6 +69,26 @@ class Presenter {
     
     @objc
     @discardableResult
+    func imageController(action: PresenterAction,
+                         completion: (() -> Void)?) -> UIViewController {
+        
+        for controller in self.navigation.viewControllers {
+            if controller.isKind(of: ImageViewController.self),
+               let imgController = controller as? ImageViewController {
+                imgController.presenter = self
+                return perform(action: action, for: imgController,
+                               completion: completion)
+            }
+        }
+        let imgController = ImageViewController()
+        imgController.presenter = self
+
+        return perform(action: action, for: imgController, completion: completion)
+        
+    }
+    
+    @objc
+    @discardableResult
     func errorController(action: PresenterAction,
                          completion: (() -> Void)?) -> UIViewController {
         

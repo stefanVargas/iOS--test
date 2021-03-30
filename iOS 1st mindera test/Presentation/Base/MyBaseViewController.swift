@@ -9,7 +9,7 @@ import UIKit
 
 class MyBaseViewController: UIViewController {
     
-    let mainView = BaseMainView()
+    private let mainView = BaseMainView()
     let viewModel = BaseViewModel()
     var presenter: Presenter?
 
@@ -61,6 +61,19 @@ class MyBaseViewController: UIViewController {
         
     }
 
+}
+
+extension MyBaseViewController: BaseMainViewDelegate {
+    func showImage(url: String) {
+        if let imageController = presenter?.imageController(action: .present,
+                                                            completion: nil)
+            as? ImageViewController {
+            imageController.setImage(fromURL: url)
+            
+        }
+    }
+    
+    
 }
 
 extension MyBaseViewController: SearchTagDelegate {

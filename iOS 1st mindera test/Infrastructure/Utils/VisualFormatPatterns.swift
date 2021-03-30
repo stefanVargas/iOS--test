@@ -5,9 +5,7 @@
 //  Created by Stefan V. de Moraes on 27/03/21.
 //
 
-import Foundation
-
-import Foundation
+import UIKit
 
 class VisualFormatPatterns {
     
@@ -23,7 +21,7 @@ class VisualFormatPatterns {
     static let fullVerSmall = "V:|-[v0]-|" /// == -8-[v0]-8-
     static let fullHorBig = "H:|-16-[v0]-16-|"
     static let fullVerBig = "V:|-16-[v0]-16-|"
-    static func ajustableInCenterVer (top: Int, bottom: Int) -> String {  return "V:|-(>=\(top))-[v0]-(>=\(bottom))-|" }
-    static func ajustableInCenterHor (left: Int,right: Int) -> String {  return "H:|-(>=\(left))-[v0]-(>=\(right))-|" }
+    static func ajustableInCenterVer (top: CGFloat, bottom: CGFloat) -> String {  return "V:|-(>=\(top))-[v0]-(>=\(bottom))-|" }
+    static func ajustableInCenterHor (left: CGFloat,right: CGFloat) -> String {  return "H:|-(>=\(left))-[v0]-(>=\(right))-|" }
     
 }

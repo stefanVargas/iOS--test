@@ -9,7 +9,7 @@ import UIKit
 
 class ErrorViewController: UIViewController {
     
-    let mainView = ErrorMainView()
+    private let mainView = ErrorMainView()
     var presenter: Presenter?
 
     override func viewDidLoad() {

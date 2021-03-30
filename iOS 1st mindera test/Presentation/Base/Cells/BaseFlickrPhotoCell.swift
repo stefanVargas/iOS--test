@@ -24,7 +24,7 @@ class BaseFlickrPhotoCell: UICollectionViewCell {
         img.backgroundColor = .clear
         img.contentMode = .scaleAspectFit
         img.clipsToBounds = true
-        img.layer.cornerRadius = 21.5
+        img.layer.cornerRadius = 8
         
         return img
     }()

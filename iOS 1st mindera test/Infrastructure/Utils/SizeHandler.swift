@@ -12,7 +12,7 @@ class SizeHandler {
     var height: CGFloat
     var width: CGFloat
     
-//    let current = SizeHandler()
+    static let current = SizeHandler()
     
     enum PositionDimension {
         

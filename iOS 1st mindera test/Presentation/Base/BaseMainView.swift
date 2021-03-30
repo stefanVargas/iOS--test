@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol BaseMainViewDelegate: class {
+    func showImage(url: String)
+}
+
 class BaseMainView: UIView {
     
     typealias  VFP = VisualFormatPatterns
@@ -33,13 +37,7 @@ class BaseMainView: UIView {
     
     private var columnsNumber: CGFloat = 2.0
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
+    weak var mainDelegate: BaseMainViewDelegate?
     
     func start() {
         configureLayout()
@@ -52,6 +50,7 @@ class BaseMainView: UIView {
     }
     
     func setFrom(controller: MyBaseViewController) {
+        self.mainDelegate = controller
         self.viewModel = controller.viewModel
         self.headerView.searchDelegate = controller
     }
@@ -84,6 +83,11 @@ class BaseMainView: UIView {
 extension BaseMainView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let item = viewModel.photos[indexPath.row]
+        let url = item.imageStringURL(imageSize: .large)
+        self.mainDelegate?.showImage(url: url)
+        
         collectionView.selectItem(at: indexPath, animated: true,
                                   scrollPosition: .centeredVertically)
     }
