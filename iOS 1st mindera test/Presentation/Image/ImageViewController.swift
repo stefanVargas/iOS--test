@@ -9,14 +9,14 @@ import UIKit
 
 class ImageViewController: UIViewController {
         
-    private let mainView = ImageMainView()
+    private(set) var mainView = ImageMainView()
     let sizeHandler = SizeHandler.current
     var presenter: Presenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.isModalInPresentation = true
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.85)
 
     }
     override func viewWillAppear(_ animated: Bool) {

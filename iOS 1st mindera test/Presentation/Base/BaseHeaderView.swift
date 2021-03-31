@@ -25,8 +25,10 @@ class BaseHeaderView: UIView {
     
     let button: UIButton = {
         let btn = UIButton(type: .custom)
-        btn.setImage(UIImage(named: StringConstants.kSeachBtn),
-                     for: .normal)
+        btn.setBackgroundImage(UIImage(named: StringConstants.kSeachBtn),
+                               for: .normal)
+        btn.setBackgroundImage(UIImage(named: StringConstants.kSeachBtn)?.imageWithoutBaseline(),
+                               for: .highlighted)
         btn.showsTouchWhenHighlighted = true
         
         return btn
@@ -36,9 +38,11 @@ class BaseHeaderView: UIView {
         let stf = UISearchTextField()
         stf.returnKeyType = .search
         stf.delegate = self
+        stf.clearsOnInsertion = true
         stf.backgroundColor = .lightText
         stf.textColor = .darkGray
         stf.insertLine(width: 1, color: .black)
+        stf.text = StringConstants.initialTagKittens
         
         return stf
     }()
@@ -47,6 +51,7 @@ class BaseHeaderView: UIView {
 
     func start() {
         configureLayout()
+        setButtonTarget()
     }
     
     func configureLayout() {
@@ -66,6 +71,18 @@ class BaseHeaderView: UIView {
                         views: titleLabel, button)
         setUpContraints(pattern: "H:|-[v0]-|", options: .alignAllLastBaseline,
                         views: seachField)
+    }
+    
+    private func setButtonTarget() {
+        button.addTarget(self, action: #selector(searchAction),
+                         for: .touchUpInside)
+    }
+    
+    @objc
+    private func searchAction() {
+        guard let tag = self.seachField.text else { return }
+        self.searchDelegate?.searchRequest(tag: tag)
+
     }
 }
 

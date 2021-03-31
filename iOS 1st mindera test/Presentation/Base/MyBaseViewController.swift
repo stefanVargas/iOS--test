@@ -9,7 +9,7 @@ import UIKit
 
 class MyBaseViewController: UIViewController {
     
-    private let mainView = BaseMainView()
+    private(set) var mainView = BaseMainView()
     let viewModel = BaseViewModel()
     var presenter: Presenter?
 
@@ -69,10 +69,8 @@ extension MyBaseViewController: BaseMainViewDelegate {
                                                             completion: nil)
             as? ImageViewController {
             imageController.setImage(fromURL: url)
-            
         }
     }
-    
     
 }
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7138940C2612DF9D00454D52 /* ImageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138940B2612DF9D00454D52 /* ImageMainView.swift */; };
 		713894142612DFD000454D52 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713894132612DFD000454D52 /* ImageViewController.swift */; };
+		7138941C26140FC100454D52 /* BaseFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138941B26140FC100454D52 /* BaseFlowTests.swift */; };
+		7138942726141BAE00454D52 /* ErrorFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138942626141BAE00454D52 /* ErrorFlowTests.swift */; };
+		7138943526141F3F00454D52 /* ImageFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138943426141F3F00454D52 /* ImageFlowTests.swift */; };
 		7138D5702612B78100F38496 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D56F2612B78100F38496 /* HUD.swift */; };
 		7138D5752612BECC00F38496 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138D5742612BECC00F38496 /* Presenter.swift */; };
 		715C8E8D26102BD600B73D37 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C8E8C26102BD600B73D37 /* ErrorViewController.swift */; };
@@ -17,7 +20,6 @@
 		716052ED260DEA2700FC6115 /* MyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052EC260DEA2700FC6115 /* MyBaseViewController.swift */; };
 		716052F2260DEA2A00FC6115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716052F1260DEA2A00FC6115 /* Assets.xcassets */; };
 		716052F5260DEA2A00FC6115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716052F3260DEA2A00FC6115 /* LaunchScreen.storyboard */; };
-		71605300260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716052FF260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift */; };
 		7160530B260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160530A260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift */; };
 		71605326260EEEE100FC6115 /* FlickrProviderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71605325260EEEE100FC6115 /* FlickrProviderAPI.swift */; };
 		7160532F260EF20D00FC6115 /* FlickrData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160532E260EF20D00FC6115 /* FlickrData.swift */; };
@@ -56,6 +58,9 @@
 /* Begin PBXFileReference section */
 		7138940B2612DF9D00454D52 /* ImageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMainView.swift; sourceTree = "<group>"; };
 		713894132612DFD000454D52 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		7138941B26140FC100454D52 /* BaseFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFlowTests.swift; sourceTree = "<group>"; };
+		7138942626141BAE00454D52 /* ErrorFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFlowTests.swift; sourceTree = "<group>"; };
+		7138943426141F3F00454D52 /* ImageFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFlowTests.swift; sourceTree = "<group>"; };
 		7138D56F2612B78100F38496 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		7138D5742612BECC00F38496 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		715C8E8C26102BD600B73D37 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		716052F4260DEA2A00FC6115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716052F6260DEA2A00FC6115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716052FB260DEA2A00FC6115 /* iOS 1st mindera testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS 1st mindera testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		716052FF260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_1st_mindera_testTests.swift; sourceTree = "<group>"; };
 		71605301260DEA2A00FC6115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71605306260DEA2A00FC6115 /* iOS 1st mindera testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS 1st mindera testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7160530A260DEA2A00FC6115 /* iOS_1st_mindera_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_1st_mindera_testUITests.swift; sourceTree = "<group>"; };
@@ -167,7 +171,9 @@
 		716052FE260DEA2A00FC6115 /* iOS 1st mindera testTests */ = {
 			isa = PBXGroup;
 			children = (
-				716052FF260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift */,
+				7138941B26140FC100454D52 /* BaseFlowTests.swift */,
+				7138942626141BAE00454D52 /* ErrorFlowTests.swift */,
+				7138943426141F3F00454D52 /* ImageFlowTests.swift */,
 				71605301260DEA2A00FC6115 /* Info.plist */,
 			);
 			path = "iOS 1st mindera testTests";
@@ -440,7 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71605300260DEA2A00FC6115 /* iOS_1st_mindera_testTests.swift in Sources */,
+				7138943526141F3F00454D52 /* ImageFlowTests.swift in Sources */,
+				7138941C26140FC100454D52 /* BaseFlowTests.swift in Sources */,
+				7138942726141BAE00454D52 /* ErrorFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

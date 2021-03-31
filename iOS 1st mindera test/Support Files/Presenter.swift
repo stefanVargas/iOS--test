@@ -21,7 +21,7 @@ protocol PresenterDelegate: class {
     optional func didPresentMain()
 }
 
-class Presenter {
+class Presenter: NSObject {
     let window: UIWindow
     var navigation = UINavigationController()
     

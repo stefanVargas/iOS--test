@@ -32,7 +32,7 @@ class BaseViewModel: NSObject {
             switch result {
             case .success(let flickrData):
                 let flickerPhotos = flickrData?.photos?.photo ?? []
-                self?.photos.append(contentsOf: flickerPhotos)
+                self?.add(photos: flickerPhotos)
                 self?.contentState = .loaded
                 self?.totalPages = flickrData?.photos?.pages ?? 1
                 completion()
@@ -49,6 +49,10 @@ class BaseViewModel: NSObject {
                 completion()
             }
         }
+    }
+    
+    func add(photos: [FlickrPhoto]) {
+        self.photos.append(contentsOf: photos)
     }
     
     func cleanPhotos() {
