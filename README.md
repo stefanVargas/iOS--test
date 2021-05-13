@@ -1,4 +1,4 @@
-# iOS-1st-mindera-test
+# iOS--test
 Mindera Flickr API Test
 
 ### Features:
